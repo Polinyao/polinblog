@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Infant&family=Press+Start+2P&display=swap');
+.facts
+
+/*Селектор-к кому обращаемся:теги-без символов.Классы- с точки.*/
+    {
+    background-color: #cd7ef2;
+    /*Свойство определяет, какую характеристику внешнего вида мы хотим изменить, а значение — как именно. */
+    color: #cd7ef2;
+    padding: 20px;
+    color: #ffffff;
+    border-width: 5px;
+    border-style: solid;
+    border-radius: 20px;
+
+}
+
+.avatar{
+	padding: 0;
+	margin: 0;
+    border-radius: 15%;
+    border:10px dashed #cd7ef2;
+
+}
+
+body {
+    font-family: "Cormorant Infant", serif;
+    font-size: 20px;
+    line-height: 26px;
+    background-color: pink;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.navigation-list {
+    list-style: none;
+}
+
+.features {
+    list-style: none;
+}
+.features li:before {
+    content: "🦄";
+}
+
+.navigation-list li {
+    background-color: #cd7ef2;
+    text-transform: uppercase;
+    display: inline-block;
+    padding: 5px;
+    border-radius: 20px;
+    border-left: 3px solid black;
+
+    /*такой селектор выберет теги li внутри тегов с классом .navigation-list*/
+}
+
+.navigation-list li:not(:first-child) {}
+
+.navigation-list li:hover {
+    background-color: #a70eed;
+    color: black;
+}
+
+p {
+    font-style: italic;
+}
+
+.label {
+    color: blue;
+}
+
+/*1-авторские (то есть наши) стили приоритетнее браузерных
+    2-селектор по классу более специфичен, чем селектор по тегу. Выигрывает более специфичный. 
+    3-Побеждает то свойство, которое находится ниже в коде.*/
+a {
+    text-decoration: none;
+    color: blue;
+}
+
+h1,
+h2 {
+    font-family: "Press Start 2P", serif;
+    color: black;
+    text-shadow: 5px 5px 5px gray;
+}
+
+img {
+    width: 500px;
+    height: 600px;
+    padding: 50px;
+}
+
+.item {
+    display: inline-block;
+    width: 30%;
+    height: 900px;
+    vertical-align: top;
+    background-color: #d891f2;
+    border-radius: 20px;
+
+}
+
+.item p {
+    color: black;
+    font-family: "Cormorant Infant", serif;
+    font-size: 24px;
+
+}
